@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran - PT RYANINDO GLOBAL SAMUDERA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-section">
+                <img src="https://via.placeholder.com/150x60/1e3a8a/ffffff?text=RYANINDO+LOGO" alt="PT RYANINDO GLOBAL SAMUDERA" class="logo">
+                <h1>PT RYANINDO GLOBAL SAMUDERA</h1>
+            </div>
+            <p class="tagline">Formulir Pendaftaran Crew Kapal</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Data Diri Pelamar</h2>
+                    <p>Silakan isi formulir di bawah ini dengan data yang benar</p>
+                </div>
+
+                <form id="registrationForm" class="registration-form">
+                    <!-- Nama -->
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap <span class="required">*</span></label>
+                        <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap Anda">
+                    </div>
+
+                    <!-- Tanggal Lahir -->
+                    <div class="form-group">
+                        <label for="tanggalLahir">Tanggal Lahir <span class="required">*</span></label>
+                        <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+                    </div>
+
+                    <!-- Lokasi Standby -->
+                    <div class="form-group">
+                        <label for="lokasiStandby">Lokasi Standby <span class="required">*</span></label>
+                        <input type="text" id="lokasiStandby" name="lokasiStandby" required placeholder="Contoh: Jakarta, Surabaya, Batam">
+                    </div>
+
+                    <!-- Nomor Telepon -->
+                    <div class="form-group">
+                        <label for="nomorTelepon">Nomor Telepon <span class="required">*</span></label>
+                        <input type="tel" id="nomorTelepon" name="nomorTelepon" required placeholder="Contoh: 081234567890">
+                    </div>
+
+                    <!-- Ijazah -->
+                    <div class="form-group">
+                        <label for="ijazah">Ijazah yang Dimiliki <span class="required">*</span></label>
+                        <input type="text" id="ijazah" name="ijazah" required placeholder="Contoh: SMA, D3, S1">
+                    </div>
+
+                    <!-- Jabatan yang Dituju -->
+                    <div class="form-group">
+                        <label for="jabatan">Jabatan yang Dituju <span class="required">*</span></label>
+                        <input type="text" id="jabatan" name="jabatan" required placeholder="Contoh: ABK, Masinis, Juru Mudi">
+                    </div>
+
+                    <!-- Kapal yang Dituju -->
+                    <div class="form-group">
+                        <label for="kapal">Kapal yang Dituju <span class="required">*</span></label>
+                        <input type="text" id="kapal" name="kapal" required placeholder="Contoh: Tanker, Cargo, Passenger Ship">
+                    </div>
+
+                    <!-- Sertifikat -->
+                    <div class="form-group">
+                        <label>Sertifikat yang Dimiliki <span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="sertifikat" value="BST">
+                                <span class="checkmark"></span>
+                                BST (Basic Safety Training)
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="sertifikat" value="SAT">
+                                <span class="checkmark"></span>
+                                SAT (Security Awareness Training)
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="sertifikat" value="AFF">
+                                <span class="checkmark"></span>
+                                AFF (Advanced Fire Fighting)
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="sertifikat" value="MFA">
+                                <span class="checkmark"></span>
+                                MFA (Medical First Aid)
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="sertifikat" value="SDSD">
+                                <span class="checkmark"></span>
+                                SDSD (Ship Driver Security Duties)
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="sertifikat" value="SCRB">
+                                <span class="checkmark"></span>
+                                SCRB (Ship Captain Role Basic)
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="sertifikat" value="BOCT">
+                                <span class="checkmark"></span>
+                                BOCT (Basic Oil Cargo Training)
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="sertifikat" value="BLGT">
+                                <span class="checkmark"></span>
+                                BLGT (Basic Liquid Gas Training)
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Rencana Daerah -->
+                    <div class="form-group">
+                        <label>Rencana Daerah Kapal yang Dituju <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label class="radio-item">
+                                <input type="radio" name="daerahKapal" value="Luar Negeri" required>
+                                <span class="radio-mark"></span>
+                                Luar Negeri
+                            </label>
+                            <label class="radio-item">
+                                <input type="radio" name="daerahKapal" value="Dalam Negeri" required>
+                                <span class="radio-mark"></span>
+                                Dalam Negeri
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <span class="btn-text">Kirim Formulir</span>
+                        <span class="btn-loader" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Mengirim...
+                        </span>
+                    </button>
+                </form>
+
+                <!-- Success/Error Messages -->
+                <div id="messageContainer" class="message-container" style="display: none;">
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Terima Kasih!</h3>
+                        <p>Data Anda telah berhasil dikirim. Kami akan segera menghubungi Anda.</p>
+                    </div>
+                    <div id="errorMessage" class="error-message" style="display: none;">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <h3>Maaf!</h3>
+                        <p>Terjadi kesalahan saat mengirim data. Silakan coba lagi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="ship-illustration">
+                <i class="fas fa-ship"></i>
+            </div>
+            <p>&copy; 2024 PT RYANINDO GLOBAL SAMUDERA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
