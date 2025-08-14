@@ -1,6 +1,6 @@
 // Konfigurasi Google Apps Script
 const GOOGLE_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbxSSfLvm45BeweeshJyfMBM2JawlNHpGYCXQsXcJR45xVyw6wQteR6qfPC3QReIUNQ9rg/exec"; // Ganti dengan ID script Anda
+  "https://script.google.com/macros/s/AKfycbzKViq_TnQukmH_UUSMUe6zxHEGyFfoVHRlyfcuHqi-C8wt_6WcuNqny7Rr4hXK0ps/exec"; // Ganti dengan ID script Anda
 
 // Form submission handler
 document.getElementById('registrationForm').addEventListener('submit', async function(e) {
